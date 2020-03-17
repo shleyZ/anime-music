@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { StyleSheet, View, Text, Linking, TouchableOpacity } from 'react-native';
+import {StyleSheet, View, Text, Linking, TouchableOpacity} from 'react-native';
 
 import SplashScreen from 'react-native-splash-screen';
 
@@ -22,12 +22,9 @@ export default class App extends React.Component {
         style={styles.container}
         onPress={(e)=> {
           Linking.openURL('http://www.devio.org/');
-        }}
-      >
+        }}>
         <View>
-          <Text style={styles.item}>
-            Home Page
-          </Text>
+          <Text style={styles.item}> Home Page </Text>
         </View>
       </TouchableOpacity>
     );
@@ -49,5 +46,3 @@ const styles = StyleSheet.create({
     backgroundColor: 'darkgray',
   },
 });
-
-// export default App;
